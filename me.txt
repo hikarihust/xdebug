@@ -1,0 +1,13 @@
+url: https://n-archives.net/articles/vscode/php-debug-with-xampp-xdebug-vscode/
+
+Config
+    C:\Windows\System32\drivers\etc\hosts
+        127.0.0.1       xdebug.xyz
+    C:\xampp\apache\conf\extra\httpd-vhosts.conf
+        <VirtualHost *:80>
+            ServerAdmin xdebug.xyz
+            DocumentRoot "C:/xampp/htdocs/xdebug"
+            ServerName xdebug.xyz
+            ErrorLog "logs/xdebug.xyz-error.log"
+            CustomLog "logs/xdebug.xyz-access.log" common
+        </VirtualHost>
